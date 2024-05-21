@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_facility_3.Controllers.LoginController">
+   <children>
+      <BorderPane layoutX="28.0" layoutY="25.0" prefHeight="254.0" prefWidth="149.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <center>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER_LEFT">
+               <children>
+                  <Label fx:id="lblName" text="Name" />
+                  <TextField fx:id="txtName" />
+                  <Label fx:id="lblPassword" text="Password">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="txtPassword" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+         </center>
+         <bottom>
+            <VBox alignment="CENTER" prefHeight="69.0" prefWidth="183.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="TOP_CENTER">
+                     <children>
+                        <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#LoginVerification" text="Log in" />
+                        <Button fx:id="btnRegister" mnemonicParsing="false" onAction="#registerNewUser" text="Register" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Button fx:id="btnGuest" mnemonicParsing="false" onAction="#LogGuest" prefHeight="26.0" prefWidth="108.0" text="Log As a guest" />
+               </children>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
